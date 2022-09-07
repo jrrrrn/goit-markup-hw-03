@@ -1,3 +1,4 @@
+/* border box від normalise */
 :root {
   --main-text-font: "Roboto";
   --logo-font: "Raleway";
@@ -19,25 +20,38 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.17;
 }
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
 .container {
-  margin: 0 auto;
-  width: 1170px;
+  margin: auto;
+  width: 1200px;
   outline: 3px solid purple;
 
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid green;
 }
 .btn {
   display: inline-block;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
- 
+
 
 }
-
+/* padding ? */
 .list {
   list-style-type: none;
+  padding-left: 0;
+  
   
 }
+
+
 .link {
   font-style: normal;
 
@@ -99,6 +113,8 @@ body {
 }
 
 /* Герой */
+
+
 .hero-title {
   /* бг для видимості */
   background-color: #2f303a;
@@ -107,6 +123,9 @@ body {
   color: var(--secondary-text-color);
   letter-spacing: 0.06em;
   line-height: 1.4;
+
+  text-align: center;
+  margin-bottom: 30px;
 }
 .modal-button {
   background-color: var(--accent-color);
@@ -117,10 +136,19 @@ body {
   font-size: 16px;
   letter-spacing: 0.06em;
   line-height: 1.9;
+
+  
 }
 
 /* Про нас */
 .title {
+  font-weight: 700;
+  color: var(--title-text-color);
+  
+  text-align: center;
+}
+
+.secondary-title {
   font-weight: 700;
   color: var(--title-text-color);
 }
