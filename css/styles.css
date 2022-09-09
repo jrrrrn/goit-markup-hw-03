@@ -34,6 +34,7 @@ h1,h2,h3,h4,h5,h6 {
   padding-top: 94px;
   padding-bottom: 94px;
   outline: 1px solid green;
+  
 }
 .btn {
   display: inline-block;
@@ -46,8 +47,8 @@ h1,h2,h3,h4,h5,h6 {
 /* padding ? */
 .list {
   list-style-type: none;
-  padding-left: 0;
-  
+  padding: 0;
+  margin:0;
   
 }
 
@@ -96,6 +97,41 @@ h1,h2,h3,h4,h5,h6 {
 .address-link:focus {
   color: var(--accent-color);
 }
+.nav-list,
+.navigation,
+.header-address {
+  display: flex;
+}
+ .navigation {
+   align-items: center;
+
+} 
+.header .container{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+
+.nav-list-item:not(:last-child),
+.header-address-item:not(:last-child) {
+  margin-right: 50px;
+
+}
+.logo{
+  margin-right: 90px;
+}
+.link {
+  padding-top: 32px ;
+  padding-bottom: 32px;
+}
+
+
+
 
 /* Футер */
 .footer .logo {
